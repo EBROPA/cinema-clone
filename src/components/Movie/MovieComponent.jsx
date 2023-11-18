@@ -45,7 +45,7 @@ const MovieComponent = ({ movie, id }) => {
             <span className={cl.titleSet}>
               {movie.Title} ({movie.Year})
             </span>
-            <h2 className={cl.aboutMovie}>О фильме</h2>
+            <h2 className={cl.aboutMovie}>Фильм о фильме</h2>
             <ul className={cl.navbar}>
               <li className={cl.navbarLi}>
                 Вышел <span className={cl.ulSpan}>{movie.Released}</span>
