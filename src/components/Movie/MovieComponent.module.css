@@ -1,0 +1,101 @@
+.mainPage {
+  position: relative;
+  height: 90vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.Info {
+  width: 80%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+}
+
+.mainInfo {
+  margin-top: 30px;
+  width: 350px;
+}
+
+.imgSet {
+  width: 300px;
+}
+
+.videoSet {
+  width: 300px;
+  height: 160px;
+  margin-top: 30px;
+}
+
+.trailer {
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: flex;
+  margin-left: 7%;
+}
+
+.leftInfo {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.titleSet {
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+.navbar {
+  list-style: none;
+  text-align: start;
+  margin-top: 30px;
+}
+
+.aboutMovie {
+  display: flex;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+}
+
+.navbarLi {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+}
+
+.ulSpan {
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.leftNavbar {
+  width: 380px;
+  margin-top: 10px;
+}
+
+.ratingTag {
+  color: #3bb33b;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+  margin-left: 30px;
+}
+
+.PlotSet {
+  font-family: Graphik Kinopoisk LC Web, Tahoma, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #000;
+}

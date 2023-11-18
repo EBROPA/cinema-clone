@@ -1,0 +1,53 @@
+.navbar__main {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: #000;
+  align-items: center;
+  position: relative;
+}
+
+.navLink {
+  display: flex;
+  width: 50px;
+}
+
+.column {
+  margin-left: auto;
+  margin-right: 200px;
+}
+
+.mod {
+  display: flex;
+}
+
+.icon {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 10px;
+  margin-left: 200px;
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.aLink {
+  margin: 20px;
+  margin-left: 30px;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.aLink:hover {
+  color: #fff;
+}
+
+.aLink:active {
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,19 @@
+.moviePage {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper_page {
+  position: relative;
+  transition: transform 0.2s;
+  margin: 20px;
+  height: 100%;
+}
+
+.wrapper_page:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px 0px #ece3e3;
+}
