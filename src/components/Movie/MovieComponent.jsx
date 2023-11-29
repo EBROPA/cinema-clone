@@ -4,8 +4,23 @@ import axios from "axios";
 
 const MovieComponent = ({ movie, id }) => {
   const [trailerMovie, setTrailerMovie] = useState(null);
+  const [fullPlot, setFullPlot] = useState(null);
 
   useEffect(() => {
+    const getFullPlot = async () => {
+      try {
+        const response = await axios.get(
+          `http://www.omdbapi.com/?t=${movie.Title}&y=${movie.Year}&plot=full&apikey=28678212`
+        );
+
+        const fullPlotURL = response.data.Plot;
+        setFullPlot(fullPlotURL);
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    };
+
     const getMovieTrailer = async () => {
       try {
         const response = await axios.get(
@@ -22,8 +37,9 @@ const MovieComponent = ({ movie, id }) => {
         return null;
       }
     };
+    getFullPlot();
     getMovieTrailer();
-  }, [id]);
+  }, [id, movie]);
 
   return (
     <div className={cl.mainPage}>
@@ -82,7 +98,7 @@ const MovieComponent = ({ movie, id }) => {
               </span>
             </li>
             <li className={cl.navbarLi}>
-              <span className={cl.PlotSet}>Сюжет : {movie.Plot}</span>
+              <span className={cl.PlotSet}>Сюжет : {fullPlot}</span>
             </li>
           </ul>
         </div>
